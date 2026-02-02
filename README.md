@@ -14,7 +14,11 @@ If you are for example using a Jetbrains product,you could even include this as 
 ## Arguments
 
 `--appId={appId}` The AppId of the application, used to find its `pressure-vessel` to run everything in.
+
 `--processName=App.exe` The name of the process to attach the debugger to.
+
 `--pressureVesselCmd="/path/to/vessel/` The path to the `pressure-vessel` to use. By default runs `SteamLinuxRuntime_sniper`.
-`--gdb="/path/to/gdb-server.exe"` The path to the `gdb-server` to use. This must be the windows version of the `gdb-server` and will be run via `wine gdb-server.exe --once localhost:{port} --attach {pid}` 
+
+`--gdb="/path/to/gdb-server.exe"` The path to the `gdb-server` to use. This must be the windows version of the `gdb-server` and will be run via `wine gdb-server.exe --once localhost:{port} --attach {pid}`
+
 `--port="1234"` Specifies the port to use for remote debugging. Defaults to `1234`.
