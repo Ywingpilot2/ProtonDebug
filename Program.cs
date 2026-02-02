@@ -2,8 +2,8 @@
 
 string appId = "";
 string pName = "";
-string pressureVesselCmd =
-    "/home/myles/.steam/debian-installation/steamapps/common/SteamLinuxRuntime_sniper/pressure-vessel/bin/steam-runtime-launch-client";
+string pressureVesselCmd = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+        ".steam/debian-installation/steamapps/common/SteamLinuxRuntime_sniper/pressure-vessel/bin/steam-runtime-launch-client");
 string gdbPath = "";
 string port = "1234";
 
