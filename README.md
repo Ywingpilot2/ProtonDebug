@@ -2,7 +2,7 @@ This program will run `gdb-server.exe` through `wine` in a given `pressure-vesse
 
 ## How To Use
 
-To use, first run the game, then run this with `--appId` set to the games app id, `--gdb` with the path to `gdb-server.exe`, then `--processName` with the name of the process to debug.
+To use you must first run the game with its launch options set to `STEAM_COMPAT_LAUNCHER_SERVICE=proton %command%`, then run this with `--appId` set to the games app id, `--gdb` with the path to `gdb-server.exe`, then `--processName` with the name of the process to debug.
 Example:
 ```
 --appId=1237970 --processName=Titanfall2.exe --gdb="/mnt/ExtraSpace/SteamLibrary/steamapps/compatdata/1237970/pfx/drive_c/Program Files/w64devkit/bin/gdbserver.exe"
